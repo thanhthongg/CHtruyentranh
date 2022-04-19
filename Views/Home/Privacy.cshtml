@@ -1,0 +1,181 @@
+﻿@{
+    ViewData["Title"] = "Tác Giả Nổi Tiếng  ";
+}
+<style>
+
+    .truyen {
+        grid-template-columns: 250px  ;
+        gap: 1.5rem;
+        display: grid;
+    }
+
+    a {
+        color: white;
+    }
+
+    .image {
+        position: relative;
+        width: 700px;
+    }
+
+    .img_image {
+        display: block;
+        width: 100%;
+    }
+
+    .image_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        color: #ffffff;
+        font-family: 'VnArial', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+        .image_overlay:hover {
+            opacity: 1;
+        }
+
+    .image_title {
+        font-size: 1.25em;
+        margin-top: 0.25em;
+    }
+
+    .image_overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .image_overlay > * {
+        transform: translate(0);
+    }
+</style>
+
+
+<head>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+    <div class="truyen">
+        <div class="image">
+            <img class="img_image" src="https://zicxabooks.com/storage/upload/posts/content/chan-dung-Fujiko-F-Fujio.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Fujiko F Fujio (01/12/1933 – 23/9/1966)</div>
+                <p class="image_description">
+                    "Tiểu sử bút danh Fujiko.F.Fujio gắn liền với những tập truyện tranh Manga. Ngay từ nhỏ lúc 5 tuổi, Fujiko.F.Fujio đã bộc lộ rõ năng khiếu thiên bẩm của mình khi ông tự vẽ phác họa nhân vật dựa vào tưởng tượng của mình. Và những năm tháng sau đó ông đã tiếp tục theo đuổi đam mê còn dang dở ấy. Năm 28 tuổi, ông lập gia đình. Giai đoạn kế tiếp chính là đỉnh cao trong sự nghiệp của Hiroshi Fujimoto.
+
+                    Fujiko.F.Fujio là người có nhịp sống lành mạnh luôn đảm bảo tất cả mọi thứ đều theo đúng giờ giấc cố định để có một sức khỏe tốt. Buổi sáng là lúc họa sĩ ngồi sáng tác, ông nghỉ trưa từ 12h và quay lại làm việc vào 14h chiều, 17h thì quay trở về với vợ con. Ngày nào ông cũng cho ra rất nhiều ý tưởng, bản thảo về các tác phẩm của mình.
+
+                    Ông là một con người thích vẽ và yêu âm nhạc. Ông thường nghe những khúc nhạc cổ điển khi làm việc, nó làm cho Fujiko.F.Fujio thư giãn và cảm hứng được dâng trào.
+
+                    Dù bận rộn nhưng Fujiko.F.Fujio luôn dành thời gian để đọc sách và xem phim để có nhiều kiến thức, trải nghiệm hơn trong công việc. Chính vì vậy trong ông thường mang theo những cuốn sách bên mình đọc trong lúc nghỉ, lúc đi bus… Còn đối với phim ảnh ông sưu tầm hàng tá phim với các thể loại khác nhau: Kinh dị, viễn tưởng, kinh điển… khi thì xem một mình, khi thì mang đến văn phòng làm việc để mọi người cùng xem.
+
+                    Cha đẻ của chú mèo máy Doraemon Fujiko.F.Fujio không chỉ viết nên câu truyện đẹp đẽ về tình bạn, về cuộc sống muôn màu, về sự phát triển của khoa học học kỹ thuật trong tương lai mà còn là người truyền cảm hứng cho nhiều thế hệ họa sĩ trẻ sau này – cảm hứng về sự sáng tạo, làm việc không ngừng.  Người họa sĩ ấy trong những ngày cuối đời vẫn bận rộn vẽ, bận rộn làm việc  và quên mình cho nền manga nhân loại"
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="truyen">
+        <div class="image">
+            <img class="img_image" src="http://i.imgur.com/TBtJGtW.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Tetsuya Chiba (11/01/1939)</div>
+                <p class="image_description">
+                    "Chiba Tetsuya sinh năm 1939 tại Tokyo nhưng sống phần lớn thời thơ ấu của ông ở Mãn Châu Lý, khi đó còn là thuộc địa của Đế quốc Nhật trong Chiến tranh Trung-Nhật, nơi bố của Chiba làm việc trong một nhà máy sản xuất giấy.[2] Một trong số những người em của Chiba Tetsuya sau này cũng trở thành một mangaka, đó là Akio Chiba, người giành Giải manga Shogakukan năm 1977.
+
+                    Năm 1956, khi vẫn còn là học sinh trung học, Chiba Tetsuya sáng tác bộ manga đầu tay của ông có tên Fukushū no Semushi Otoko. Năm 1958 ông bắt đầu sự nghiệp sáng tác chuyên nghiệp cho một tạp chí shōjo[1] với tác phẩm Butōkai no Shōjo. Sau đó Chiba bắt đầu chuyển hướng sang sáng tác các bộ manga thể loại shōnen và seinen với đề tài chủ yếu là thể thao. Tác phẩm đáng nhớ nhất của Chiba có lẽ là bộ truyện tranh Ashita no Jō (あしたのジョー,) nói về một vận động viên quyền Anh có tên Jō Yabuki. Năm 1978 Chiba Tetsuya đã được trao Giải thưởng manga Shogakukan hạng mục seinen cho bộ truyện Notari Matsutaro (のたり松太郎), một tác phẩm lấy đề tài về môn vật sumo.[3] Ngoài Ashita no Jō và Notari Matsutaro, Chiba Tetsuya còn có các tác phẩm đáng chú ý khác như Siêu quậy Teppi (Ore wa Teppei, おれは鉄兵) lấy đề tài kiếm đạo hay Ashita Tenki ni Naare (あした天気になあれ) lấy đề tài golf."
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="truyen">
+        <div class="image">
+            <img class="img_image" src="https://moveek.com/storage/media/cache/large/ff0a6e2b7269651eeabcdf4aa660a1d98a40ad44.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Hayao Miyazaki (05/01/1941)</div>
+                <p class="image_description">
+                    "Miyazaki sinh ra tại thị trấn Akebono-cho thuộc Tokyo, là người con thứ 2 trong bốn con trai của gia đình. Bố của ông, Miyazaki Katsuji, là giám đốc của xưởng máy bay Miyazaki Airplane chuyên làm bánh lái cho máy bay chiến đấu A6M Zero trong thời kì thế chiến thứ II.[1] Vì thế gia đình ông rất khá giả trong quãng thời tuổi ấu thơ của ông.[2] Vì vậy từ nhỏ, Miyazaki đã hình thành niềm đam mê suốt đời với ngành hàng không, chủ đề xuất hiện thường xuyên trong các tác phẩm sau này của ông.
+
+                    Khi còn nhỏ, Miyazaki thường phải chuyển nhà, một phần vì mẹ ông phải chữa bệnh lao xương từ năm 1947 đến tận năm 1955. Mẹ của Miyazaki rất nghiêm khắc và thông minh. Bà đã qua đời năm 1983 ở tuổi 71. Sau này bộ phim Hàng xóm của tôi là Totoro có một nhân vật bà mẹ mắc phải một căn bệnh tương tự.
+
+                    Sau khi học xong trung học, Miyazaki vào trường đại học Gakushuin, ông tốt nghiệp năm 1963 với bằng khoa học chính trị và kinh tế học. Tháng 4 năm 1963, Miyazaki vào làm việc tại hãng phim hoạt hình Toei. Tháng 10 năm 1965, ông cưới một họa sĩ đồng nghiệp là bà Ota Akemi, hai người sau đó có hai con trai là Mizayaki Gorō và Mizayaki Keisuke. Hiện nay, Gorō cũng đã trở thành một đạo diễn phim hoạt hình với bộ phim Huyền thoại đất liền và đại dương của hãng Ghibli. Miyazaki đặc biệt yêu thích và thần tượng các nghệ sĩ manga trong đó có Fukushima Tetsuji, Yamakawa Soji và Tezuka Osamu."
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="truyen">
+        <div class="image">
+            <img class="img_image" src="https://paoru.fr/wp-content/uploads/2012/11/1308376895.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Adachi Mitsuru (09/02/1951)</div>
+                <p class="image_description">
+                    "Trước năm 1969, Adachi bắt đầu vẽ cho tạp chí COM. Năm 1969, ông theo chân anh trai đến Tokyo để bắt đầu làm công việc phụ tá cho mangaka Isami Ishii[1] Một năm sau, ông có tác phẩm đầu tay Kieta Bakuon. Adachi tiếp tục xuất bản những truyện ngắn khác nhau và những series ngắn trong suốt những năm 1970 dựa trên tác phẩm của những người đi trước mà nổi tiếng nhất là bộ truyện vẽ lại Rainbowman từ 1972-1973. Năm 1978, ông ra mắt tác phẩm đầu tiên của mình, Nine, trên Weekly Shōnen Sunday. Ông còn xuất bản 2 bộ khác là Hiatari Ryōkō! từ 1979-1981 trên Weekly Shōjo Comic, và Miyuki từ 1980-1984 trên Shōnen Big Comic.
+
+                    Adachi trở thành một cái tên quen thuộc khi bộ Touch phát hành từ 1981-1986 trên Weekly Shōnen Sunday. Năm 1982, Hiatari Ryōkō! được sản xuất thành phim trên kênh truyền hình Nhật Bản. Năm tiếp theo, 1983, là một năm trọng đại với Adachi. Ông nhận Giải thưởng Shogakukan Manga Award lần thứ 28 cho thể loại shōnen/shōjo manga với hai bộ Touch và Miyuki.[6] Tác phẩm Miyuki đã được sản xuất thành anime và phim truyền hình, còn Nine được dựng thành 3 phim, trong đó có một phim được sản xuất ngay sau đó,năm 1984.
+
+                    Touch được chế tác thành anime năm 1985, công chiếu 2 năm trên Fuji TV. Shōjo manga lãng mạn Slow Step in trên Ciao từ 1986 to 1991, và bộ truyện hài hước lãng mạn khác là Rough xuất hiện trên Weekly Shōnen Sunday từ 1987 to 1989. Sau đó Adachi ra mắt Niji Iro Tōgarashi, bộ manga lịch sử cổ trang hài hước và lãng mạn, từ 1990-1992 trên Weekly Shōnen Sunday."
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="truyen">
+        <div class="image">
+            <img class="img_image" src="http://www.livreshebdo.fr/sites/default/files/assets/images/akira_toriyama_dr.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Akira Toriyama (05/04/1955)</div>
+                <p class="image_description">
+                    "Ông khởi đầu với tác phẩm Wonder Island (1979) được đăng trên Weekly Shonen Jump. Tại đây, sự nghiệp của ông bắt đầu tỏa sáng với bộ Dr. Slump. Năm 1982, ông giành giải thưởng Shogakukan Manga Award cho bộ này với giải manga cho thể loại shounen và shoujo hay nhất năm.
+
+                    Năm 1984, ông cho ra mắt bộ Dragon Ball và tạo nên một cú sốc lớn – 35 triệu bản đã được tiêu thụ chỉ riêng ở Nhật Bản. Hơn thế nữa, tác phẩm lọt vào hàng top truyện bán chạy nhất với trên 500 triệu bản trên toàn thế giới. Ngay cả ở Mỹ và các nước Mỹ Latinh đó, bộ truyện cũng rất thành công. Dragon Ball là một bộ Anime nổi tiếng bậc nhất thế giới, một trong những bộ Manga được tiêu thụ nhiều nhất mọi thời đại.
+
+                    Ngày nay, Toriyama như được biết đến bởi tác phẩm này. Trong suốt thời gian xuất bản, tạp chí Jump như đang ở trong thời đại hoàng kim bởi doanh số bán luôn cao chót vót. Sau thành công, ông vẫn tiếp tục vẽ bộ này từ năm 1984 đến năm 1995. Suốt thời gian đó, ông đã cho ra mắt 519 chapters - tức 42 volumes. Mỗi vol đều xấp xỉ 200 trang. Ngoài ra, bộ truyện còn được làm thành nhiều thứ khác nhau như anime, vật dụng, games,…cho mãi đến nay vẫn rất thịnh hành. Khi ông quyết định dừng vẽ bộ này, người biên tập đồng tình và nói với mọi người "anh ta sẽ còn tìm thấy những hướng đi mới". Tác giả của bộ truyện nổi tiếng Bleach cũng là người được ông động viên để có những thành công ngày nay."
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="truyen">
+        <div class="image">
+            <img class="img_image" src="https://game8.vn/media/202109/images/haopv/top-10-mangaka-4.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Rumiko Takahashi (10/10/1957)</div>
+                <p class="image_description">
+                    "Takahashi Rumiko chào đời vào ngày 10 tháng 10 năm 1957 tại Niigata, Nhật Bản. Theo một bài viết, vào thuở nhỏ niềm yêu thích manga của Rumiko không hơn gì so với những đứa trẻ khác, cô cũng hay vẽ nguệch ngoạc vào các trang vở của mình nhưng chưa hề nghĩ gì đến việc sẽ trở thành một mangaka chuyên nghiệp.[8] Tuy nhiên trong một bài phỏng vấn năm 2000, chính Takahashi Rumiko lại khẳng định: "'Tôi luôn muốn trở thành một họa sĩ truyện tranh chuyên nghiệp, ngay từ khi tôi còn là một đứa con nít."[9] Khi vào học khoa văn của trường Đại học Nihon Josei (Nihon Josei daigaku - Đại học Phụ nữ Nhật Bản), Rumiko bắt đầu tham gia Gekiga Sonjuku, một trường học nổi tiếng về manga theo trường phái kịch họa (劇画, gekiga) do magaka lừng danh Koike Kazuo sáng lập và bắt đầu con đường sáng tác của mình.nhân vật, từ đó hình thành nên phong cách xây dựng nhân vật độc đáo của mình. Và kể từ lúc đó, cô sinh viên Rumiko đã bắt đầu tìm được công việc mà mình thật sự yêu thích."
+
+                    Cũng trong thời gian ở Gekiga Sonjuku, Rumiko đã cùng làm việc với Yamamoto Atsuji và làm trợ lý cho Umezu Kazuo, một mangaka nổi tiếng về truyện kinh dị. Và ở Nihon Josei cô cũng trở thành bạn thân của mangaka Meijiro Hanako và tiểu thuyết gia Hikawa Reiko.[8]"
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="truyen">
+        <div class="image">
+            <img class="img_image" src="https://tuoitho.mobi/upload/tac-gia/gosho-aoyama/anh-bia.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Gosho Aoyama (21/06/1963)</div>
+                <p class="image_description">
+                    "Aoyama Gōshō từ lúc còn trẻ đã là một người vẽ rất giỏi. Khi còn học ở trường cấp 2, Aoyama đã từng đoạt giải nhất một cuộc thi vẽ tranh với bức vẽ mang tên "Cuộc chiến Yukiai", và bức tranh này đã được trưng bày tại cửa hàng Daimaru ở Tottori, quê hương của ông. Ông tốt nghiệp trường cấp ba Ikuei. Sau đó, ông theo học ngành Mỹ thuật tại trường Đại học Nhật Bản - Trường Đại học lớn nhất Nhật Bản. Tại đây, mùa đông năm 1986, ông tham gia cuộc thi viết truyện tranh cho sinh viên năm thứ nhất và giành chiến thắng, đó chính là một bước ngoặt trong cuộc đời Aoyama, và cũng là bàn đạp để ông hướng tới sự nghiệp sáng tác truyện tranh trong tương lai sau này."
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>

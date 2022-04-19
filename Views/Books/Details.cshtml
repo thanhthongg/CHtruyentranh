@@ -1,0 +1,61 @@
+﻿@model CHtruyentranh.Models.Book
+
+@{
+    ViewData["Title"] = "Chi Tiet";
+}
+
+<style>
+    .row{
+        color: white;
+    }
+    .titledetails{
+        color: white;
+
+    }
+    .backdetails{
+        color: white;
+    }
+</style>
+
+
+<h1 class="titledetails">Thong Tin Truyen</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TenTruyen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TenTruyen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NgayBan)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NgayBan)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TheLoai)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TheLoai)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gia)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NoiDung)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NoiDung)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Chinh Sua</a> |
+    <a class="backdetails" asp-action="Index">Quay Lai Danh Sach</a>
+</div>

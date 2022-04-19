@@ -1,0 +1,69 @@
+﻿@model CHtruyentranh.Models.Book
+
+@{
+    ViewData["Title"] = "Xoa";
+}
+
+
+<style>
+    .backdelete{
+        color: white;
+    }
+    .row{
+        color: white;
+    }
+    .titledelete{
+        color: white;
+    }
+    .deletee{
+        color: white;
+    }
+</style>
+
+<div class="titledelete">
+    <h1 >Xoa Truyen </h1>
+
+    <h3>Ban co chac chan xoa du lieu nay khong?</h3>
+</div>
+<div>
+    <h4>Thong Tin Truyen</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TenTruyen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TenTruyen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NgayBan)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NgayBan)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TheLoai)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TheLoai)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gia)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NoiDung)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NoiDung)
+        </dd>
+    </dl>
+    
+    <form class="deletee" asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Xoa" class="btn btn-danger" /> |
+        <a class="backdelete" asp-action="Index">Quay Lai Danh Sach</a>
+    </form>
+</div>

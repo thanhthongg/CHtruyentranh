@@ -1,0 +1,153 @@
+﻿@model IQueryable<Book>
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Chào Mừng Quý Khách</h1>
+</div>
+<style>
+    .display-4{
+        color: white;
+    }
+
+    .truyen {
+        grid-template-columns: 250px 250px 250px 250px;
+        gap: 1.5rem;
+        display: grid;
+    } 
+   
+    a{
+        color: white;
+    }
+    
+    .image{
+        position: relative;
+        width: 250px;
+    }
+    .img_image{
+        display: block;
+        width: 100%;
+    }
+    .image_overlay{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        color: #ffffff;
+        font-family: 'VnArial', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+    .image_overlay:hover{
+        opacity:1;
+    }
+    .image_title{
+        font-size: 1.25em;
+        margin-top: 0.25em; 
+    }
+    .image_overlay > *{
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    .image_overlay > *{
+        transform : translate(0);
+    }
+</style>
+
+<head>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div class="truyen">
+        <div class="image">
+            <img class="img_image" src="https://gamek.mediacdn.vn/133514250583805952/2020/12/9/photo-1-16074855784472112826198.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Kimetsu No Yaiba</div>
+                <p class="image_description">
+                    "Lưỡi gươm diệt quỷ", tựa tiếng Anh: Demon Slayer: (Kimetsu no Yaiba) là một bộ manga Nhật Bản do Gotōge Koyoharu sáng tác và minh hoạ. Truyện kể về hành trình trở thành kiếm sĩ diệt quỷ của thiếu niên Kamado Tanjirō sau khi gia đình cậu bị quỷ sát hại và em gái Nezuko của cậu bị biến thành quỷ
+                </p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="img_image" src="https://khenphim.com/wp-content/uploads/2020/12/Doraemon-2020-1-poster_khenphim-scaled.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Doreamon</div>
+                <p class="image_description">
+                    "Nội dung. Doraemon là một chú mèo máy được Nobi Sewashi (Nobi Nobito), cháu năm đời của Nobi Nobita, gửi từ thế kỷ 22 về quá khứ của ông mình để giúp đỡ Nobita trở nên tiến bộ và giàu có, tức là cũng sẽ cải thiện hoàn cảnh của con cháu Nobita sau này."
+                </p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="img_image" src="https://photo2.tinhte.vn/data/attachment-files/2021/01/5308253_uArhdjuf-ig7Pu80VqN6gqH_IkDCptAZZZJanslOTNo.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Attack On Titan</div>
+                <p class="image_description">
+                    "Câu chuyện kể về cuộc hành trình của Eren Jaeger và hai người bạn thân từ thuở nhỏ là Mikasa Ackerman và Armin Arlert. Cuộc đời của họ hoàn toàn bị thay đổi sau khi bức tường ngoài cùng Maria bị sụp đổ và các Titan đổ bộ vào ngôi làng tàn sát người thân của mình."
+                </p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="img_image" src="https://1.bp.blogspot.com/-Ne7djHL-FW8/Xy5UiZLOYSI/AAAAAAAAcHs/T9pT0aTtxGsM8kaJ3dWiZM9tB0UUGrxkgCLcBGAsYHQ/s1500/game4v-Sword-Art-Online-Alternative-10.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Sword Art Online</div>
+                <p class="image_description">
+                    "Sau khi thoát khỏi UW, Kirito, Asuna, Alice và toàn thể người chơi VRMMO Nhật đều bị vướng vào một sự kiện mang tên Unital Ring. Tất cả các người chơi đều bắt buộc phải convert tài khoản qua bên đấy và nếu chết là mất tài khoản vĩnh viễn. Hình dạng nhân vật được thiết lập giống với bên ngoài, hệt như ở SAO cũ. Yui (tức con gái của Kirito và Asuna) không còn là tiểu tiên chỉ đường của hệ thống nữa mà cũng được tính là người chơi."
+                </p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="img_image" src="https://cdn-amz.fadoglobal.io/images/I/81o4oV5OsvS.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">I Want To Eat Your Pancreas</div>
+                <p class="image_description">
+                    "Chuyện phim xoay quanh câu chuyện của đôi bạn trung học Haruki Shiga và Sakura Yamauchi. Vô tình đọc nhật kí của cô bạn, Haruki Shiga phát hiện ra Sakura Yamauchi mắc bệnh tuyến tụy giai đoạn cuối. Với tư cách là người ngoài duy nhất biết chuyện, Haruki đã hứa sẽ giữ bí mật bệnh tình của cô bạn cùng lớp."
+                </p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="img_image" src="https://upload.wikimedia.org/wikipedia/vi/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">One Piece</div>
+                <p class="image_description">
+                    "One Piece kể về cuộc hành trình của Monkey D. Luffy - thuyền trưởng của băng hải tặc Mũ Rơm và các đồng đội của cậu. Luffy tìm kiếm vùng biển bí ẩn nơi cất giữ kho báu lớn nhất thế giới One Piece, với mục tiêu trở thành Tân Vua Hải Tặc. One Piece cũng được chuyển thể sang một vài loại hình truyền thông khác nhau."
+                </p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="img_image" src="https://flxt.tmsimg.com/assets/p12981153_b1t_v8_aa.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Death Note</div>
+                <p class="image_description">
+                    "Yagami Raito, một học sinh cấp III có trí tuệ xuất chúng nhưng luôn cảm thấy chán nản với cuộc sống quanh mình đã vô tình tìm thấy "Death Note", một cuốn sổ màu đen bí ấn có thể giết chết bất kì ai miễn là người sử dụng biết tên và khuôn mặt của đối tượng. Sau khi đã xác minh chức năng của cuốn sổ, Raito bắt đầu cân nhắc những việc mà cuốn sổ có thể làm và bắt đầu kế hoạch tạo ra một thế giới lý tưởng không có tội ác."
+                </p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="img_image" src="https://images2.imgbox.com/bc/f8/VuoM0b2P_o.jpg" />
+            <div class="image_overlay ">
+                <div class="image_title">Naruto: Shippuden</div>
+                <p class="image_description">
+                    "Naruto: Shippuden là một bộ anime truyền hình dài tập được chuyển thể từ Phần II của loạt manga của Kishimoto Masashi với tổng cộng 500 tập phim. Nội dung phim lấy bối cảnh hai năm rưỡi sau Phần I trong vũ trụ Naruto, xoay quanh cậu ninja thiếu niên Uzumaki Naruto và những đồng đội của cậu."
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</body>

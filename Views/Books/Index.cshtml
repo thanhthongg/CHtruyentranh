@@ -1,0 +1,88 @@
+﻿@model CHtruyentranh.Models.BookGenreViewModel
+@{
+    ViewData["Title"] = "Dat Mua Truyen";
+}
+<style>
+    .table{
+        color: white;
+    }
+    .title{
+        color: white;
+    }
+    .menuedit {
+        color: white;
+    }
+    .menuedit:hover{
+        opacity: 1;
+    }
+    .titleindex{
+        color: white;
+    }
+</style>
+<div class="titleindex">
+    <h1>Dat Hang</h1>
+
+    <p>
+        <a asp-action="Create">Dat Mua Truyen</a>
+    </p>
+</div>
+
+<form asp-controller="Books" asp-action="Index" method="get">
+    <select asp-for="DanhSachTruyen" asp-items="Model.TheLoaiTruyen">
+        <option value="">All</option>
+    </select>
+    <p class="title">
+        Title: <input type="text" name="SearchString" />
+        <input type="submit" value="Tim Kiem" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DanhSachTruyen[0].TenTruyen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DanhSachTruyen[0].NgayBan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DanhSachTruyen[0].TheLoai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DanhSachTruyen[0].Gia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DanhSachTruyen[0].NoiDung)
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.DanhSachTruyen)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenTruyen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TheLoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoiDung)
+            </td>
+            <td>
+                <a class="menuedit" asp-action="Edit" asp-route-id="@item.Id">ChinhSua</a> |
+                <a class="menuedit" asp-action="Details" asp-route-id="@item.Id">ThongTin</a> |
+                <a class="menuedit" asp-action="Delete" asp-route-id="@item.Id">Xoa</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
